@@ -1,150 +1,86 @@
-body{
-  margin: 0;
+*{
   padding: 0;
-  box-sizing: content-box;
+  margin: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, white,#e4eae2);
-}
-
-.ext{
-  background-color: aquamarine;
-  color:aqua;
 }
 
 header{
-  background-color: #333;
-  padding: 10px 0;
- 
+  background-color: black;
 }
 
-.nav-menu{
-   list-style-type: none;
-   display: flex;
-   justify-content: center;
-   gap: 30px;
-   color: white;
+
+.nav-release{
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+  color: white;
+  padding:30px 10px;
 }
 
-.nav-menu li a{
-  color :white;
-  font-weight: bold;
+.nav-release a{
   text-decoration: none;
+  color: white;
+  margin:10px 10px
 }
 
-.nav-menu li a:hover{
-  color:orange
-}
-
-.hero{
-  background-color: #fff6cc;
-  padding: 40px 20px;
+.profile-section{
+  margin: 40px auto;
+  width: fit-content;
   text-align: center;
 }
 
-.main-title{
-  color: orange;
-  font-size: 32px;
-  margin-bottom: 10px;
+h1{
+  margin-top: 20px;
 }
 
-#intro{
-  font-style: italic;
-  color: #222;
+img{
+  width: 240px;
+  height: auto;
 }
 
-/* content */
 
-.content-section{
-  margin:40px auto;
-  padding:20px;
-  max-width: 700px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  text-align: justify;
-  text-indent: 20px;
+table{
+  width: 1800px;
 }
 
-/* infor box biru */
-
-.info-box{
-  background-color: turquoise;
-  padding: 4px;
-  margin-top: 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.cta-button{
-  background: orange;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: block;
-  border-radius: 10px;
-  text-align: center;
-  margin: 20px auto 0 auto;
-  font-weight: bold;
-
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 40px auto;
+  padding: 10px 10px;
 }
 
 .form-section{
-  background-color: #fff;
   margin: 40px auto;
-  padding: 30px 20px;
-  max-width: 500px;
-  border-radius: 8px;
-  box-shadow: 2 2px 2px #222;
+  width: 400px;
 }
 
-.form-section h2{
-  text-align: center;
-  color: orange;
-}
-
-.form-box{
+form{
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-.form-box label{
+.form-section label{
   font-weight: bold;
+  margin:10px 0;
 }
 
-.form-box input{
-  padding: 10px;
-  border: 1px solid #acc; 
+.form-section input {
+  padding:5px
+}
+.form-section textarea {
+  width: 400px;
+  height: 140px;
 }
 
-.form-box input:focus{
-  border-color: orange;
-  outline: none;
-}
-
-.form-box button{
-  background: orange;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: block;
-  border-radius: 10px;
-  text-align: center;
-  margin: 20px auto 0 auto;
+.button-input{
+  background-color: black;
   font-weight: bold;
-  border: none; 
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* footer */
-
-.footer{
-  position: static;
-  bottom:0;
-  width: 100%;
-  background: #333;
   color: white;
-  text-align: center;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  width: 80px;
 }

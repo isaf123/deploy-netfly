@@ -3,37 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belajar CSS</title>
-  <style type="text/css">
-    .heading{
-      color: blueviolet;
-    }
-
-    #heading2{
-      color: brown;
-      background-color: black;
-    }
-
-  </style>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 1. inline -->
-   <h1 style="color:bisque;">belajar css dasar</h1>
+  <!-- release1 -->
+   <section>
+     <header>
+       <nav class="nav-release">
+         <a href="#profile">Home</a>
+         <a href="#data">Explore Data</a>
+         <a href="#form">Form</a>
+         <h2>Welcome to My Portofolio</h2>
+       </nav>
+     </header>
 
-  <!-- 2. internal -->
-    <div class="heading">
-      <h2>FTGO RMT10</h2>
-    </div>
+     <div class="profile-section" id="profile">
+        <img src="profile.png" alt="">
+        <h1> John Doe</h1>
+        <p>Web Developer</p>
+        <p>Welcome to my portofolio website. Here you can learn more about my skills, experience, and projects. Feel free to explore!</p>
+     </div>
 
-    <div id="heading2">
-      <h2>FTGO RMT10</h2>
-    </div>
+   </section>
 
-  <!-- 3. ekseternal -->
-    <div>
-      <h2 class="ext">aa</h2>
+   <!-- release 2 -->
+   <section>
+    <header >
+      <nav class="nav-release">
+        <h2>Welcome to My Portofolio</h2>
+      </nav>
+    </header>
+
+    <div class="table-full" id="table">
+      <table>
+        <thead>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>John Doe</td>
+              <td>john.doe@example.com</td>
+              <td>123456789</td>
+            </tr>
+
+            <tr>
+              <td>Jane Smith</td>
+              <td>jane.smith@example.com</td>
+              <td>123456789</td>
+            </tr>
+
+          </tbody>
+        </thead>
+      </table>
     </div>
+   </section>
+
+   <!-- release 3  -->
+    <section>
+      <header >
+        <nav class="nav-release">
+          <h2>Form</h2>
+        </nav>
+
+      </header>
+      <div class="form-section">
+
+        <form action="" class="form-section" id="form">
+          <label for="name">name</label>
+          <input type="text" id="name">
+          <label for="email">email</label>
+          <input type="text" id="email">
+          <label for="message">message</label>
+          <textarea name="" id="message"></textarea>
+          <div>
+            <input type="button" value="submit" class="button-input">
+    
+          </div>
+        </form>
+
+      </div>
+    </section>
+
 </body>
 </html>
